@@ -56,4 +56,4 @@ _______________________________________________________________________
 AULA 23/03/23 - ENTREGA DIAGRAMA DE CLASSE.
 
 SEGUE DOCUMENTO.
-<img src="https://github.com/thiagosilva89/IES100---Engenharia-de-Software-I/blob/main/imgs/Classe%20UML.jpeg"  height="600">
+<img src="https://github.com/thiagosilva89/bertoti/blob/main/img/Classe%20UML.jpeg"  height="600">
