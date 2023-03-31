@@ -6,14 +6,9 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println(nome);
 
-        alteraNome("Thais");
+        Cadastro.alterarNome("Zenon");
 
         System.out.println(nome);
         
     }
-
-    public static void alteraNome(String recebeNome){
-        nome = recebeNome;
-    }
-
 }
