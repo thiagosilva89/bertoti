@@ -13,38 +13,6 @@ import java.util.Random;
  */
 public class Curso {
 
-   //ESTRUTURA PRINCIPAL DO CÓDIGO
- public static void main(String[] args) {
-        Random r = new Random(); // OBJETO PARA CRIAÇÃO NUMEROS ALEATÓRIOS PARA TESTE DA APLICAÇÃO. //
-        
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        Curso[] curso = new Curso[3]; // DEFINIDO ARRAYLIST COM TAMANHO DINÂMICO PARA CRIAÇÃO DOS CURSOS; //////////////////////
-        Disciplina[] disciplina = new Disciplina[10]; // DEFINIDO ARRAYLIST COM TAMANHO DINÂMICO PARA CRIAÇÃO DAS DISCIPLINAS; // 
-        
-        for(int i=0;i<curso.length;i++) // PRIMEIRO LAÇO CRIA OS CURSOS ////////////////////////////////////////////////////////
-            {
-                curso[i] = new Curso(i,nomeDisciplina()); // NESSA ETAPA CRIA O CURSO ////////////////////////////////
-                
-                for(int j=0;j<disciplina.length;j++) // SEGUNDO LAÇO CRIA AS DISCIPLINAS //
-                {
-                    disciplina[j] = new Disciplina(j,r.nextInt(100)); // CRIANDO DISCIPLINA RANDOM CARGA //
-                    curso[i].addDisciplina(disciplina[j]); // ADICIONANDO OBJETO DISCIPLINA A ARRAY LIST ///////////////////////
-                }
-            }
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-    ///// IMPRIMINDO OS OBJETOS ////////////////////////////////////////////////////////////////////////////////////////////////
-        for(int i=0;i<curso.length;i++)
-        {   
-          
-            System.out.println("////////////////////////////////////////////////////////////////////////////////");
-            curso[i].imprimir();
-            curso[i].exibeDisciplinaCargaMaior();
-            curso[i].calcularTotalHoras();
-            System.out.println("////////////////////////////////////////////////////////////////////////////////\n\n");
-        }
-
-    }
-    
     // CONSTRUCTOR 
      
     private int numero;
@@ -108,7 +76,7 @@ public class Curso {
             }
         }
         Disciplina disciplina = listaDisciplina.get(idCargaHoraria);
-        System.out.println("\nDisciplina com maior carga horária é a : " + disciplina.getCodigo() + " Com " + disciplina.getCargaHoraria() + " horas.");
+        System.out.println("\nDisciplina com maior carga horaria e a : " + disciplina.getCodigo() + " Com " + disciplina.getCargaHoraria() + " horas.");
         
     }
     // METODO PARA CALCULAR TOTAL DE HORAS DO CURSO
@@ -120,7 +88,7 @@ public class Curso {
             Disciplina disciplina = listaDisciplina.get(i);
             totalHoras = totalHoras + disciplina.getCargaHoraria();         
         }
-        System.out.println("\nTotal de horas para formação no curso é : " + totalHoras);
+        System.out.println("\nTotal de horas para formacao no curso e : " + totalHoras);
     }
 
     /// ROTINA PARA GERAÇÃO NOME ALEATÓRIO PARA DISCIPLINA. 

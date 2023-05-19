@@ -35,7 +35,7 @@ public class Disciplina {
     }
     
     public void imprimir(){
-        System.out.println("Código da disciplina " + codigo + "\t Carga Horária " + cargaHoraria);
+        System.out.println("Codigo da disciplina " + codigo + "\t Carga Horaria " + cargaHoraria);
     }
     
 }
