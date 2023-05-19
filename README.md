@@ -61,4 +61,4 @@ SEGUE DOCUMENTO.
 <br>
 <p align="center">Codigo
 <br>
-<a href="https://github.com/thiagosilva89/bertoti/tree/main/ClasseUML/src/Escola">Primeira Sprint</a>
+<a href="https://github.com/thiagosilva89/bertoti/tree/main/ClasseUML/src/Escola">Código da classe UML</a>
